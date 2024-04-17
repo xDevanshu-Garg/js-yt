@@ -1,6 +1,6 @@
 /*
 Return type of variables in JavaScript
-1) Primitive Datatypes
+1) Primitive Datatypes (call by value)
        Number => number
        String  => string
        Boolean  => boolean
@@ -9,7 +9,7 @@ Return type of variables in JavaScript
        Symbol  =>  symbol
        BigInt  =>  bigint
 
-2) Non-primitive Datatypes
+2) Non-primitive Datatypes (call by refrence)
        Arrays  =>  object
        Function  =>  function
        Object  =>  object
@@ -52,6 +52,13 @@ const myFunction = function(){
 console.log(typeof anotherId);
 console.log(typeof bigNumber);
 
-
-
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+/* datatypes are based on memory allocation
+Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+JavaScript is a dynamically typed language. 
+This means that you don't need to specify the data type of a variable when you declare it. 
+*/
